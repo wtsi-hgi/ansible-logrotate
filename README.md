@@ -10,7 +10,7 @@ specifying a list of directives.
 None
 
 ## Role Variables
-* **logrotate_scripts**: A list of logrotate scripts and the directives to use for the rotation.
+**logrotate_scripts**: A list of logrotate scripts and the directives to use for the rotation.
 * name - The name of the script that goes into /etc/logrotate.d/
 * path - Path to point logrotate to for the log rotation
 * paths - A list of paths to point logrotate to for the log rotation.
@@ -44,9 +44,9 @@ logrotate_scripts:
       - copytruncate
 ```
 
-* **logrotate_conf_dir**: String defining the location of the directory containing the logrotate configuration files.
+**logrotate_conf_dir**: String defining the location of the directory containing the logrotate configuration files.
 
-* **logrotate_replace_old_configurations**: Boolean defining whether to remove conflicting path configurations defined
+**logrotate_replace_old_configurations**: Boolean defining whether to remove conflicting path configurations defined
 in configuration files not managed by this role.
 <br><br>
 E.g. if you define a configuration for managing `/var/log/kern.log`, you may find that this has done before in
